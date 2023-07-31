@@ -5,7 +5,11 @@
     <title>FleaMarket</title>
 </head>
 <body>
-<h1>FleaMarket</h1><hr>
+<h1>FleaMarket | <a href="/login">Войти</a></h1><hr>
+<form action="/logout" method="post">
+    <input type="hidden" name="_csrf" value="${_csrf.token}">
+    <input type="submit" value="Выйти"/>
+</form>
 <h2> Товары со всего мира </h2>
 <form action="/" method="get">
     Поиск по названию объявления: <input type="text" name="title"><br>
