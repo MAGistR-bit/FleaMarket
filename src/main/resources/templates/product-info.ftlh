@@ -13,8 +13,8 @@
 <b>Описание товара: </b>${product.description}<br>
 <b>Цена: </b>${product.price}<br>
 <b>Город: </b>${product.city}<br>
-<b>Автор: </b>${product.user.name}<br>
-<b>Номер телефона: </b>${product.user.phoneNumber}<br>
+<#-- Ссылка на продавца -->
+<b>Автор: </b> <a href="/user/${product.user.id}">${product.user.name}</a><br>
 <hr>
 </body>
 </html>
