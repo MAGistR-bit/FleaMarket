@@ -86,6 +86,15 @@ public class User implements UserDetails {
     }
 
     // Security
+
+    /**
+     * Проверяет зарегистрирован ли в системе администратор
+     * @return true - администратор присутствует, false - администратор
+     * отсутствует
+     */
+    public boolean isAdmin() {
+        return roles.contains(Role.ROLE_ADMIN);
+    }
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return roles;
