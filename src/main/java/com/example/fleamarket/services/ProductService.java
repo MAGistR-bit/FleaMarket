@@ -84,6 +84,7 @@ public class ProductService {
 
     /**
      * Преобразует MultipartFile (для загрузки файла) в "сущность"
+     *
      * @param file файл, который необходимо загрузить
      * @return объект Image
      * @throws IOException исключение (возможна проблема ввода-вывода)
@@ -103,9 +104,19 @@ public class ProductService {
      *
      * @param id идентификатор товара, который будет удален
      */
-    public void deleteProduct(Long id) {
-        log.info("Deleted the product with id={}", id);
-        productRepository.deleteById(id);
+    public void deleteProduct(User user, Long id) {
+        Product product = productRepository.findById(id)
+                .orElse(null);
+        if (product != null) {
+            if (product.getUser().getId().equals(user.getId())) {
+                productRepository.delete(product);
+                log.info("Product with id = {} was deleted", id);
+            } else {
+                log.error("User: {} haven't this product with id = {}", user.getEmail(), id);
+            }
+        } else {
+            log.error("Product with id = {} is not found", id);
+        }
     }
 
     /**
