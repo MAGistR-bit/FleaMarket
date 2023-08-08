@@ -41,7 +41,7 @@ public class Image {
      * Изображение предварительного просмотра
      */
     @Column(name = "isPreviewImage")
-    private boolean isPreviewImage;
+    private boolean previewImage;
     @Lob
     private byte[] bytes;
 

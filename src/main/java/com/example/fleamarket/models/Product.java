@@ -36,7 +36,7 @@ public class Product {
      * Цена
      */
     @Column(name = "price")
-    private int price;
+    private Integer price;
     /**
      * Город
      */
