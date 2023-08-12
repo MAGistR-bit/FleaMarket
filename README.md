@@ -42,4 +42,69 @@ The ER (Entity Relationship) diagram is shown below:
 
 There are users of type user and admin.
 ## Demonstration of the application
-TODO
+To get acquainted with the goods that are sold at the Flea Market, you need to open 
+the main page of the application.
+The main page looks like this:
+
+![Main Page](src/main/screenshots/search-product.png)
+
+To find out detailed information about the product, you need to click on the product you like.
+The photo shows detailed information about the mobile phone (iPhone 14).
+
+![Product Info](src/main/screenshots/product-info.png)
+
+If you want to view the products of a specific user, click on his link (nickname).
+For example, when you click on the name (Татьяна Новикова), the next page opens.
+
+![Product Specific User](src/main/screenshots/info-specific-user.png)
+
+It is also worth noting that to find a specific product, enter its name in the search bar.
+For example, let's see if anyone sells Pikachu. The result is shown in the figure.
+
+![Pikachu](src/main/screenshots/buy-pikachu.png)
+
+In order to add a product, you need to register. The registration form is shown in the figure below.
+
+![Registration](src/main/screenshots/registration.png)
+
+After you have registered, you need to log in.
+I want to say that the password you specified will be encrypted, 
+so it will not be so easy to pick up the key.
+
+To log in, enter the data specified during registration.
+
+![Login](src/main/screenshots/login.png)
+
+After logging in, your personal account will be available to you.
+In your personal account, you can view your contact details, as well as get acquainted with the products that 
+you have put up for sale.
+In order to log out of your account, you need to click on the appropriate button.
+The user's personal account is shown below.
+
+![Personal account](src/main/screenshots/user-account.png)
+
+To view the products that you sell, you need to click on the "Мои товары" button.
+If you want to remove the product (remove from sale), click on the "Удалить" button, and the ad will be deleted.
+The page with the user's products is presented below.
+
+![My Products](src/main/screenshots/my-product.png)
+
+If you want to add a product, click on the "Добавить новый товар" button. 
+A form will appear that you need to fill out. The user is given 
+the opportunity to upload up to 3 photos, but to publish an ad, it is enough 
+to upload at least one photo. The form for adding the product is given below.
+
+![Add product](src/main/screenshots/add-product.png)
+
+If you have administrator rights, the admin panel will be available to you. Here you can 
+get acquainted with all the users registered in the system, as well as block/unblock a specific user, 
+if necessary.
+
+![Admin panel](src/main/screenshots/admin-panel.png)
+
+The true status in the activity column indicates that the user can log in. 
+This status can be changed by clicking on the "Заблокировать" button. 
+If the status is false, the user will not be able to log in.
+
+I also want to note that to return to the main page, 
+click on the inscription "Flea Market" in the header.
