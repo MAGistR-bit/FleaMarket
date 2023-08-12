@@ -1,4 +1,4 @@
-## Flea Market
+# Flea Market
 
 ![Авторизация](src/main/screenshots/login.png)
 
@@ -7,6 +7,14 @@ The developed application is a platform for selling goods.
 This project was created **for educational purposes**.
 
 Application runs from localhost:8080/
+
+# Table of contents
+* [Technology stack](#technology-stack)
+* [Functionality](#functionality)
+* [Database settings](#database-settings)
+* [Demonstration of the application](#demonstration-of-the-application)
+* [FAQ](#faq-)
+
 ## Technology stack
 Below is a set of technologies that were used in the development of the application:
 * Spring: Boot, Security, Data
@@ -108,3 +116,31 @@ If the status is false, the user will not be able to log in.
 
 I also want to note that to return to the main page, 
 click on the inscription "Flea Market" in the header.
+
+## FAQ 
+1. Packet for query is too large (2285643 > 1048576). 
+You can change this value on the server by setting the 'max_allowed_packet' variable.
+What can I do?
+```sql
+SOLUTIONS:-
+You can see it's current value in mysql like this:
+
+SHOW VARIABLES LIKE 'max_allowed_packet'
+
+You can try to change it like this, but it's unlikely this will work on shared hosting:
+
+SET GLOBAL max_allowed_packet=16777216;
+and restart mysql service..
+```
+2. How do I create a user with administrator rights (using Java)?
+
+By changing the line of code shown below, you will constantly create users with administrator rights.
+```java
+public boolean createUser(User user) {
+        // ...   
+        // Установить роль ROLE_ADMIN
+        user.getRoles().add(Role.ROLE_ADMIN);
+        
+        // TODO
+    }
+```
