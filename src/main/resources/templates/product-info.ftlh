@@ -19,7 +19,7 @@
                     <div class="container">
                         <div class="carousel-caption">
                             <a href="/images/${image.id}">
-                                <img class="product" style="height: 100px" src="/images/${image.id}">
+                                <img class="product" style="height: 100px" src="/images/${image.id}" alt="image">
                             </a>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
         </a>
     </div>
     <hr>
-    <p><h1 style="text-align: center">${product.title} | ${product.price} ₽</h1></p>
+    <p><h1 style="text-align: center">${product.title} | ${product.price} ₽</h1>
     <p style="text-align: center">${product.description}</p>
     <p style="text-align: center">Номер телефона продавца: <b>${authorProduct.phoneNumber}</b></p>
 

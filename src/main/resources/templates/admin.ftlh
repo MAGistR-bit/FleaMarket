@@ -21,7 +21,7 @@
                 <th>
                     <form action="/admin/user/ban/${user.id}" method="post">
                         <input type="hidden" name="_csrf" value="${_csrf.token}">
-                        <input type="submit" class="btn btn-light" value="Заблокировать">
+                        <input type="submit" class="btn btn-light" value="Заблокировать/Разблокировать">
                     </form>
                 </th>
                 <th><a href="/admin/user/edit/${user.id}">Редактирование</a></th>

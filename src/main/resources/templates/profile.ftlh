@@ -5,7 +5,7 @@
     <br>
     <div style="text-align: center">
         <img src="/static/images/avatar.png"
-             style="border:2px solid black; border-radius: 20px" height="120">
+             style="border:2px solid black; border-radius: 20px" height="120" alt="profile image">
         <br>
         <br>
         <h2>${user.name}</h2>

@@ -13,7 +13,7 @@ Application runs from localhost:8080/
 * [Functionality](#functionality)
 * [Database settings](#database-settings)
 * [Demonstration of the application](#demonstration-of-the-application)
-* [FAQ](#faq-)
+* [FAQ](#faq)
 
 ## Technology stack
 Below is a set of technologies that were used in the development of the application:
@@ -117,7 +117,7 @@ If the status is false, the user will not be able to log in.
 I also want to note that to return to the main page, 
 click on the inscription "Flea Market" in the header.
 
-## FAQ 
+## FAQ
 1. Packet for query is too large (2285643 > 1048576). 
 You can change this value on the server by setting the 'max_allowed_packet' variable.
 What can I do?
