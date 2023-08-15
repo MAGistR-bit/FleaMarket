@@ -60,7 +60,7 @@ public class Product {
     private LocalDateTime dateOfCreated;
 
     @PrePersist
-    private void init(){
+    public void init(){
         dateOfCreated = LocalDateTime.now();
     }
 

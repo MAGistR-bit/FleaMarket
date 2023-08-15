@@ -81,7 +81,7 @@ public class User implements UserDetails {
      * Инициализация данных
      */
     @PrePersist
-    private void init() {
+    public void init() {
         dateOfCreated = LocalDateTime.now();
     }
 
