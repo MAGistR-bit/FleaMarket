@@ -13,6 +13,7 @@ Application runs from localhost:8080/
 * [Functionality](#functionality)
 * [Database settings](#database-settings)
 * [Demonstration of the application](#demonstration-of-the-application)
+* [Testing](#testing)
 * [FAQ](#faq)
 
 ## Technology stack
@@ -116,6 +117,10 @@ If the status is false, the user will not be able to log in.
 
 I also want to note that to return to the main page, 
 click on the inscription "Flea Market" in the header.
+
+## Testing
+Tested the Spring Boot application.
+I wrote JUnit tests (see the folder with tests).
 
 ## FAQ
 1. Packet for query is too large (2285643 > 1048576). 
