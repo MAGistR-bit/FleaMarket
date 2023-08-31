@@ -8,7 +8,7 @@ This project was created **for educational purposes**.
 
 Application runs from localhost:8080/
 
-# Table of contents
+# 📖 Table of contents
 * [Technology stack](#technology-stack)
 * [Functionality](#functionality)
 * [Database settings](#database-settings)
@@ -16,7 +16,7 @@ Application runs from localhost:8080/
 * [Testing](#testing)
 * [FAQ](#faq)
 
-## Technology stack
+## 🧑🏻‍🔧 Technology stack
 Below is a set of technologies that were used in the development of the application:
 * Spring: Boot, Security, Data
 * MySQL
@@ -26,7 +26,7 @@ Below is a set of technologies that were used in the development of the applicat
 * Maven
 * Java Development Kit (JDK) 17
 
-## Functionality
+## 💻 Functionality
 The functionality of the application is described below:
 * User registration
 * User authorization 
@@ -38,7 +38,7 @@ The functionality of the application is described below:
 * Find the product by name
 * Change the user role to administrator and vice versa.
 
-## Database settings
+## 🗃️ Database settings
 MySQL is used as the database.
 If you want to run the project locally, follow these steps:
 1. Open src/main/resources/application.properties
@@ -51,7 +51,7 @@ The ER (Entity Relationship) diagram is shown below:
 ![ER-модель](src/main/screenshots/database.png)
 
 There are users of type user and admin.
-## Demonstration of the application
+## 🎥 Demonstration of the application
 To get acquainted with the goods that are sold at the Flea Market, you need to open 
 the main page of the application.
 The main page looks like this:
@@ -119,7 +119,7 @@ If the status is false, the user will not be able to log in.
 I also want to note that to return to the main page, 
 click on the inscription "Flea Market" in the header.
 
-## Testing
+## ⚙️ Testing
 Tested the Spring Boot application.
 I wrote JUnit tests (see the folder with tests).
 To run tests in IntelliJ IDEA, use the "Run Tests in fleamarket" button.
@@ -127,7 +127,14 @@ All tests are passed.
 
 ![Tests](src/main/screenshots/test-passed.png)
 
-## FAQ
+## 📝 License 
+Licensed under the [MIT License](./LICENSE).
+## 👨‍💻 Contributing
+Since I'm still learning, it would be nice if you added new features to my app (for example, registration by mail with 
+a confirmation code, checking the correctness of data entry, etc.)
+Perhaps you could fix the errors that were made in the operation of the application.
+I would be happy to accept your pull request (PR). Then I would study how you did it.
+## ❔✅ FAQ
 1. Packet for query is too large (2285643 > 1048576). 
 You can change this value on the server by setting the 'max_allowed_packet' variable.
 What can I do?
