@@ -24,6 +24,7 @@ The repo was created by a student for students.
 * [Technology stack](#-technology-stack)
 * [Functionality](#-functionality)
 * [Database settings](#-database-settings)
+* [How to launch the app](#-how-to-launch-the-app)
 * [Demonstration of the application](#-demonstration-of-the-application)
 * [Testing](#-testing)
 * [License](#-license)
@@ -75,6 +76,9 @@ After that, click the "Apply (Применить)" button.
 The database must be successfully created. A screenshot is shown below.
 
 ![MySQL Workbench](src/main/screenshots/mysql-workbench.png)
+
+## 🚀 How to launch the app
+TODO
 
 ## 🎥 Demonstration of the application
 To get acquainted with the goods that are sold at the Flea Market, you need to open 
