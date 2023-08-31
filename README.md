@@ -24,6 +24,7 @@ Below is a set of technologies that were used in the development of the applicat
 * JavaScript
 * Bootstrap
 * Maven
+* Java Development Kit (JDK) 17
 
 ## Functionality
 The functionality of the application is described below:
@@ -121,6 +122,10 @@ click on the inscription "Flea Market" in the header.
 ## Testing
 Tested the Spring Boot application.
 I wrote JUnit tests (see the folder with tests).
+To run tests in IntelliJ IDEA, use the "Run Tests in fleamarket" button.
+All tests are passed.
+
+![Tests](src/main/screenshots/test-passed.png)
 
 ## FAQ
 1. Packet for query is too large (2285643 > 1048576). 
