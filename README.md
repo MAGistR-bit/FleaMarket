@@ -6,6 +6,7 @@
 ![IDE](https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Spring](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=Spring-Security&logoColor=white)
 
 Flea Market is a simple **Spring Boot** application. 
 The developed application is a platform for selling goods.
@@ -13,13 +14,21 @@ This project was created **for educational purposes**.
 
 Application runs from localhost:8080/
 
+## ℹ️ Who is this repository useful for?
+This repository will be useful for students who want to learn how to create a Spring Boot application.
+And also for those who want to learn how to connect MySQL to their project.
+The project contains detailed documentation, so there should be no problems associated with launching the application.
+The repo was created by a student for students.
+
 # 📖 Table of contents
-* [Technology stack](#technology-stack)
-* [Functionality](#functionality)
-* [Database settings](#database-settings)
-* [Demonstration of the application](#demonstration-of-the-application)
-* [Testing](#testing)
-* [FAQ](#faq)
+* [Technology stack](#-technology-stack)
+* [Functionality](#-functionality)
+* [Database settings](#-database-settings)
+* [Demonstration of the application](#-demonstration-of-the-application)
+* [Testing](#-testing)
+* [License](#-license)
+* [Contributing](#-contributing)
+* [FAQ](#-faq)
 
 ## 🧑🏻‍🔧 Technology stack
 Below is a set of technologies that were used in the development of the application:
@@ -56,6 +65,17 @@ The ER (Entity Relationship) diagram is shown below:
 ![ER-модель](src/main/screenshots/database.png)
 
 There are users of type user and admin.
+
+**Remark.** When creating a database, the author of the project recommends using **MySQL Workbench**.
+This is a great tool for working with databases.
+
+To create a database in Workbench, you need to click on the "Create a new schema..." button. 
+Then specify the name of the database, character set (if necessary).
+After that, click the "Apply (Применить)" button.
+The database must be successfully created. A screenshot is shown below.
+
+![MySQL Workbench](src/main/screenshots/mysql-workbench.png)
+
 ## 🎥 Demonstration of the application
 To get acquainted with the goods that are sold at the Flea Market, you need to open 
 the main page of the application.
@@ -132,7 +152,7 @@ All tests are passed.
 
 ![Tests](src/main/screenshots/test-passed.png)
 
-## 📝 License 
+## 📝 License
 Licensed under the [MIT License](./LICENSE).
 ## 👨‍💻 Contributing
 Since I'm still learning, it would be nice if you added new features to my app (for example, registration by mail with 
