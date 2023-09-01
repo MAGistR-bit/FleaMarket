@@ -78,7 +78,21 @@ The database must be successfully created. A screenshot is shown below.
 ![MySQL Workbench](src/main/screenshots/mysql-workbench.png)
 
 ## 🚀 How to launch the app
-TODO
+1. Clone the repository (to the working directory):
+```sql
+git@github.com:MAGistR-bit/FleaMarket.git
+```
+2. Open the project in your favorite IDE (for example, IntelliJ IDEA).
+3. Wait until all dependencies are loaded.
+4. Create a database. Creating a database is shown in the _"Database settings"_ section. 
+5. Edit the **application.properties** (set username, password, etc.).
+Use the data required to connect to the database.
+6. Run the project.
+7. The contents of the database tables must be updated.
+   The application must be running on localhost:8080/.
+   When opening localhost:8080/, the start page of the application should appear in the browser.
+
+I wish you every success! 
 
 ## 🎥 Demonstration of the application
 To get acquainted with the goods that are sold at the Flea Market, you need to open 
@@ -190,3 +204,16 @@ public boolean createUser(User user) {
         // TODO
     }
 ```
+3. How do I configure the port for the Spring Boot application?
+   
+After creating and launching the application on Spring Boot, it automatically starts listening on port 8080. 
+This standard behavior can be changed if you need to use a different port. For example, port 8080 may already be 
+occupied by another application, and in this case you will have to configure the Spring Boot application 
+to listen to another port.
+
+The easiest way to change the port is **to make changes to the application.properties** file.
+You need to add the following line to the **_application.properties_**:
+```java
+server.port=9090
+```
+In this case, the application will listen on port 9090.
